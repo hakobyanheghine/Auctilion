@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Auctilion</string>
+
+    <string name="sign_in">Sign In</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="cancel">Cancel</string>
+    <string name="add">Add</string>
+
+    <string name="sign_in_email_hint">Email</string>
+    <string name="sign_in_pass_hint">Password</string>
+    <string name="sign_in_name_hint">Full Name</string>
+
+    <string name="add_item_name_hint">Name</string>
+    <string name="add_item_desc_hint">Description</string>
+    <string name="add_item_price_hint">Price</string>
+    <string name="add_item_duration_hint">Duration in seconds</string>
+
+    <string name="incomplete_data">Please, fill in all fields</string>
+    <string name="incorrect_email">Please, fill in correct email</string>
+    <string name="incorrect_data">Your email and password do not match</string>
+    <string name="already_signed_up">You have already signed up</string>
+    <string name="wrong_bid">Please, insert a valid bid!</string>
+    <string name="wrong_price">Please, insert a valid price!</string>
+
+    <string name="welcome_user">Welcome %1$s !</string>
+    <string name="add_new_item">Add New Item</string>
+
+    <string name="add_new_bid_hint">Your price…</string>
+    <string name="add_new_bid">Add Bid</string>
+
+    <string name="time_left">Time left \n %1$s</string>
+</resources>

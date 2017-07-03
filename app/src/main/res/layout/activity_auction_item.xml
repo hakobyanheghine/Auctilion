@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorBackground"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin">
+
+    <TextView
+        android:id="@+id/auction_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:padding="5dp"
+        android:text="@string/app_name"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="22sp"/>
+
+    <TextView
+        android:id="@+id/auction_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/auction_name"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/auction_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/auction_price"
+        android:layout_centerHorizontal="true"
+        android:padding="5dp"
+        android:text="@string/app_name"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/auction_time_left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/auction_desc"
+        android:layout_centerHorizontal="true"
+        android:text="@string/time_left"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp"/>
+
+    <LinearLayout
+        android:id="@+id/auction_add_bid_cont"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/auction_time_left"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/auction_bid_edit"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:background="@drawable/xml_divider_top_bottom_right_left"
+            android:hint="@string/add_new_bid_hint"
+            android:inputType="textEmailAddress"
+            android:padding="5dp"
+            android:textColor="@android:color/black"
+            android:textSize="22sp"/>
+
+        <TextView
+            android:id="@+id/auction_add_bid"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:padding="5dp"
+            android:text="@string/add_new_bid"
+            android:textAlignment="center"
+            android:textColor="@color/colorAccent"
+            android:textSize="22sp"/>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/auction_bids_list"
+        android:layout_below="@id/auction_add_bid_cont"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"/>
+
+</RelativeLayout>
